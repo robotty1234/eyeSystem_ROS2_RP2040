@@ -16,6 +16,6 @@
 //Image size[px]
 #define DISPLAY_X 96
 #define DISPLAY_Y 64
-#define DISPLAY_BUFFER 6144
+#define DISPLAY_BUFFER DISPLAY_X *  DISPLAY_Y
 
 #endif
