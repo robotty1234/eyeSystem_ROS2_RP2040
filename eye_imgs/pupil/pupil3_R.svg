@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="119.503"
+   inkscape:export-xdpi="119.503"
+   inkscape:export-filename="E:\ドキュメント\projectFile\コンパクト型コミュニケーションロボット\berryfact_V3.0\eye2\pupil\pupil3_L.png"
+   viewBox="0 0 77.119688 51.721262"
+   width="77.11969"
+   height="51.72126"
+   version="1.1"
+   id="svg36"
+   sodipodi:docname="pupil3_R.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview38"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="7.6963815"
+     inkscape:cx="52.982733"
+     inkscape:cy="36.812742"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g32" />
+  <defs
+     id="defs14">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path2" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path5" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path7" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path9" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g32"
+     transform="translate(-77.320121,-780.52087)">
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 77.820121,781.02087 h 76.119689 v 50.72126 H 77.820121 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+       id="path16" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 96.443721,807.70643 a -17.854156,17.854156 0 1 1 35.708309,0 -17.854156,17.854156 0 1 1 -35.708309,0 z"
+       style="fill:#1252e6;fill-opacity:1;stroke:#121fad;stroke-opacity:1"
+       id="path20" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 111.62575,807.70643 a -2.672126,2.672126 0 1 1 5.34425,0 -2.672126,2.672126 0 1 1 -5.34425,0 z"
+       style="fill:none;stroke:#000000"
+       id="path24" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 107.61851,807.70643 a -6.67937,6.67937 0 1 1 13.35874,0 -6.67937,6.67937 0 1 1 -13.35874,0 z"
+       style="fill:none;stroke:#000000"
+       id="path26" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 105.61489,807.70643 a -8.682992,8.682992 0 1 1 17.36598,0 -8.682992,8.682992 0 1 1 -17.36598,0 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000"
+       id="path28" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       d="m 109.62213,807.70643 a -4.67575,4.67575 0 1 1 9.3515,0 -4.67575,4.67575 0 1 1 -9.3515,0 z"
+       style="fill:none;stroke:#000000"
+       id="path30" />
+  </g>
+  <desc
+     id="desc34">originPupil.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+</svg>

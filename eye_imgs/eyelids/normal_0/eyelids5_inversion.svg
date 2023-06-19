@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="eyelids5_inversion.svg"
+   id="svg70"
+   version="1.1"
+   height="1122.5196850393702"
+   width="793.7007874015749"
+   viewBox="0 0 793.7007874015749 1122.5196850393702">
+  <metadata
+     id="metadata74">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="g66"
+     inkscape:window-maximized="0"
+     inkscape:window-y="-32000"
+     inkscape:window-x="-32000"
+     inkscape:cy="813.85491"
+     inkscape:cx="145.78577"
+     inkscape:zoom="5.5899436"
+     showgrid="false"
+     id="namedview72"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs14">
+    <marker
+       style="overflow:visible"
+       refY="0.0"
+       refX="0.0"
+       orient="auto"
+       id="DistanceX">
+      <path
+         id="path2"
+         style="stroke:#000000; stroke-width:0.5"
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5" />
+    </marker>
+    <pattern
+       y="0"
+       x="0"
+       height="8"
+       width="8"
+       patternUnits="userSpaceOnUse"
+       id="Hatch">
+      <path
+         id="path5"
+         linecap="square"
+         stroke-width="0.25"
+         stroke="#000000"
+         d="M8 4 l-4,4" />
+      <path
+         id="path7"
+         linecap="square"
+         stroke-width="0.25"
+         stroke="#000000"
+         d="M6 2 l-4,4" />
+      <path
+         id="path9"
+         linecap="square"
+         stroke-width="0.25"
+         stroke="#000000"
+         d="M4 0 l-4,4" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <g
+     inkscape:label="base"
+     id="layer1"
+     inkscape:groupmode="layer" />
+  <g
+     id="g66"
+     inkscape:label="0"
+     inkscape:groupmode="layer">
+    <path
+       id="path16"
+       style="fill:#000000;fill-opacity:1;stroke:#000000"
+       d="m 128.41637,777.42398 h 76.11969 v 50.72126 h -76.11969 z"
+       inkscape:export-xdpi="119.503"
+       inkscape:export-ydpi="119.503" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       id="path18"
+       style="fill:none;stroke:#000000"
+       d="m 128.86356,800.3 c -0.0805,0.9203 -0.0698,1.94791 0.0971,3.07715 0.31398,2.12524 1.1096,4.1286 2.1984,5.95328 0.73262,1.22776 1.73059,2.59568 3.09348,4.02453" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       id="path20"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+       d="m 128.86356,800.3 c -0.0573,0.65483 -0.0963,1.6604 0.0742,2.91602 0.13269,0.9773 0.37371,1.96671 0.72483,2.95745 0.73061,2.06157 1.90471,4.03027 3.39263,5.83386 2.50171,3.03245 5.86344,5.5576 9.54726,7.56151 4.59491,2.49953 11.32139,5.14711 20.10356,6.06386 6.5053,0.67908 13.37689,0.29464 19.59151,-1.2442 5.49412,-1.36044 9.2411,-3.34718 11.58169,-4.89328 2.28209,-1.50745 4.24054,-3.2605 5.72737,-5.20342 1.3808,-1.80435 2.14017,-3.50259 2.57046,-4.96567 0.48072,-1.63454 0.65914,-3.36291 0.46335,-5.16745 -0.21337,-1.96655 -0.86197,-3.90262 -1.87438,-5.75476 -0.939,-1.7178 -2.56111,-4.16248 -5.96519,-6.9697 -3.7363,-3.08119 -8.79796,-5.85897 -14.83596,-7.73334 -6.80446,-2.1123 -14.69045,-3.00572 -22.2709,-2.40743 -7.19142,0.56757 -12.37906,2.38278 -15.53241,3.81369 -3.06608,1.39131 -5.81044,3.13294 -7.98668,5.15866 -2.04038,1.89924 -3.19256,3.70283 -3.86813,5.04461 -0.76567,1.52073 -1.28526,3.18402 -1.44323,4.98959" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       id="path26"
+       style="fill:none;stroke:#000000"
+       d="m 164.89413,781.16313 v 0.0424" />
+    <path
+       inkscape:export-ydpi="119.503"
+       inkscape:export-xdpi="119.503"
+       id="path32"
+       style="fill:none;stroke:#000000"
+       d="m 164.89413,781.20553 v -0.0424" />
+  </g>
+  <desc
+     id="desc68">eye.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+</svg>
