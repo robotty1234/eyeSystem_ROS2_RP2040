@@ -13,18 +13,26 @@ void EyeControl::initDisplay(uint16_t fillColoc){
 void EyeControl::setLidValue(int lidVal){
     if(lidVal < 0){
         eyeLid_After = 0;
-    }else if(lidVal > LIDS_MAX){
-        eyeLid_After = LIDS_MAX;
+    }else if(lidVal >= LIDS_MAX){
+        eyeLid_After = LIDS_MAX - 1;
     }else{
         eyeLid_After = lidVal;
+    }
+}
+//Save the value of eyeLidKind after modification
+void EyeControl::setLidTypeValue(int lidKindVal){
+    if(lidKindVal < 0){
+        eyeLidType_After = 0;
+    }else{
+        eyeLidType_After = lidKindVal;
     }
 }
 //Save the value of eyePupil after modification
 void EyeControl::setPuilValue(int pupilVal){
     if(pupilVal < 0){
         eyePupil_After = 0;
-    }else if(pupilVal > PUPIL_MAX){
-        eyePupil_After = PUPIL_MAX;
+    }else if(pupilVal >= PUPIL_MAX){
+        eyePupil_After = PUPIL_MAX - 1;
     }else{
         eyePupil_After = pupilVal;
     }
@@ -35,6 +43,18 @@ void EyeControl::setBlinkValue(int blinkVal){
         eyeBlink = 0;
     }else{
         eyeBlink = blinkVal;
+    }
+}
+//Get the After variable of eyeLidKind
+int EyeControl::getLidKindValue(void){
+    return eyeLid_After;
+}
+//Get the Anser differnt LidKind after and LidKind before
+boolean EyeControl::differentLidType(void){
+    if(eyeLidType_After != eyeLidType_Before){
+        return true;
+    }else{
+        return false;
     }
 }
 //Get the After variable of eyeLid
@@ -58,7 +78,7 @@ void EyeControl::dispEye(void){
 }
 //While generating an image that eliminates the difference between the after variable and the before variable for each change, bring the value of the before variable closer to the after variable
 //Returns true when there is no difference between the after variable and before variable of the item that is true
-boolean EyeControl::creatEyeImg(boolean lidSignal, boolean pupilSignal, boolean reversal){
+boolean EyeControl::creatEyeImg(boolean lidSignal, boolean lidTypeSignal, boolean pupilSignal, boolean reversal){
     boolean result = true;
     //Differential change of after and before variables
     //eyeLid
@@ -75,7 +95,10 @@ boolean EyeControl::creatEyeImg(boolean lidSignal, boolean pupilSignal, boolean 
             eyePupil_Before = _approximationValue(eyePupil_Before, eyePupil_After);
         }
     }
-
+    //Whether to update the eyelid type value
+    if(lidTypeSignal == true){
+        eyeLidType_Before = eyeLidType_After;
+    }
     //Create a base
     for(int i=0;i<DISPLAY_BUFFER;i++){
         eyeImg[i] = 0xffff;
@@ -92,8 +115,8 @@ boolean EyeControl::creatEyeImg(boolean lidSignal, boolean pupilSignal, boolean 
         //Eyelid image synthesis
         for(int y=0;y<DISPLAY_Y;y++){
             for(int x=0;x<DISPLAY_X;x++){
-                if(eyelidsImgData[eyeLid_Before][(DISPLAY_X * y) + x] != 0xffff){
-                    eyeImg[(DISPLAY_X * y) + x] = eyelidsImgData[eyeLid_Before][(DISPLAY_X * y) + x];
+                if(eyelidsImgData[eyeLidType_Before][eyeLid_Before][(DISPLAY_X * y) + x] != 0xffff){
+                    eyeImg[(DISPLAY_X * y) + x] = eyelidsImgData[eyeLidType_Before][eyeLid_Before][(DISPLAY_X * y) + x];
                 }
             }
         }
@@ -109,8 +132,8 @@ boolean EyeControl::creatEyeImg(boolean lidSignal, boolean pupilSignal, boolean 
         //Eyelid image synthesis
         for(int y=0;y<DISPLAY_Y;y++){
             for(int x=(DISPLAY_X -1);x>=0;x--){
-                if(eyelidsImgData[eyeLid_Before][(DISPLAY_X * y) + x] != 0xffff){
-                    eyeImg[(DISPLAY_X * y) + ((DISPLAY_X - 1) - x)] = eyelidsImgData[eyeLid_Before][(DISPLAY_X * y) + x];
+                if(eyelidsImgData[eyeLidType_Before][eyeLid_Before][(DISPLAY_X * y) + x] != 0xffff){
+                    eyeImg[(DISPLAY_X * y) + ((DISPLAY_X - 1) - x)] = eyelidsImgData[eyeLidType_Before][eyeLid_Before][(DISPLAY_X * y) + x];
                 }
             }
         }

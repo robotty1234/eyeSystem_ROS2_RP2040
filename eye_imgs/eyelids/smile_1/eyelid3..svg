@@ -9,9 +9,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="119.50258"
    inkscape:export-xdpi="119.50258"
-   inkscape:export-filename="E:\projectFile\コンパクト型コミュニケーションロボット\berryfact_V4.0\eyeSystem_ROS2_RP2040\eye_imgs\eyelids\smile_1\eyelids1.png"
+   inkscape:export-filename="E:\projectFile\コンパクト型コミュニケーションロボット\berryfact_V4.0\eyeSystem_ROS2_RP2040\eye_imgs\eyelids\smile_1\eyelids3.png"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="eyelid1.svg"
+   sodipodi:docname="eyelid3..svg"
    id="svg70"
    version="1.1"
    height="51.72126"
@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,8 +38,8 @@
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="-8"
-     inkscape:cy="2.4081802"
-     inkscape:cx="6.9869427"
+     inkscape:cy="28.06168"
+     inkscape:cx="-12.57881"
      inkscape:zoom="3.952687"
      showgrid="false"
      id="namedview72"
@@ -105,13 +105,15 @@
      inkscape:groupmode="layer">
     <path
        id="path16"
-       style="fill:#000000;fill-opacity:1;stroke:#000003;stroke-opacity:1"
+       style="fill:#000000;stroke:#000003;fill-opacity:1;stroke-opacity:1"
        d="m 238.59104,683.51238 h -76.11968 v 50.72126 h 76.11968 z"
        inkscape:export-xdpi="119.50258"
        inkscape:export-ydpi="119.50258" />
     <g
+       style="fill:none"
        id="g929"
-       transform="matrix(-1,0,0,1,401.0624,0)">
+       inkscape:export-xdpi="119.50258"
+       inkscape:export-ydpi="119.50258">
       <path
          d="m 238.14386,706.3884 c 0.0805,0.9203 0.0698,1.94792 -0.0971,3.07716 -0.31399,2.12524 -1.1096,4.1286 -2.1984,5.95327 -0.73262,1.22776 -1.7306,2.59569 -3.09349,4.02454"
          style="fill:none;stroke:#000000"
@@ -210,10 +212,10 @@
          id="path64" />
     </g>
     <path
-       sodipodi:nodetypes="sccs"
-       d="m 199.89323,701.9323 c -9.18319,0.0753 -18.80663,2.98139 -26.09375,12.08594 15.73794,9.43613 42.18187,7.01414 55.48047,-4.47656 0,0 -14.08139,-7.73494 -29.38672,-7.60938 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.26762;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path931"
+       sodipodi:nodetypes="ccc"
+       id="path949"
+       d="m 234.42071,707.05053 c 0,0 -33.60299,-29.88409 -66.13768,6.30822 11.74816,23.55461 64.41064,21.03479 66.13768,-6.30822 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.25331px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-xdpi="119.50258"
        inkscape:export-ydpi="119.50258" />
   </g>

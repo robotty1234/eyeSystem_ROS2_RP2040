@@ -87,7 +87,7 @@ void loop1(){
     }else{
       countTime++;
       #ifdef DEBUG
-        Serial.println(countTime);
+        //Serial.println(countTime);
       #endif
       delay(1);
     }
@@ -106,33 +106,45 @@ void eyeInfoReceiv_task(void){
       if(s.indexOf("eye_lid_l:") > -1){
           eye_L.setLidValue(val);
           #ifdef DEBUG
-            Serial.println("set value eye lid L");
-            Serial.println(s.indexOf("eye_lid_l:"));
+            Serial.print("set value eye lid L :");
+            Serial.println(val);
           #endif
       }else if(s.indexOf("eye_lid_r:") > -1){
           eye_R.setLidValue(val);
           #ifdef DEBUG
-            Serial.println("set value eye lid R");
-            Serial.println(s.indexOf("eye_lid_r:"));
+            Serial.print("set value eye lid R :");
+            Serial.println(val);
+          #endif
+      }else if(s.indexOf("eye_lid_type_l:") > -1){
+          eye_L.setLidTypeValue(val);
+          #ifdef DEBUG
+            Serial.print("set value eye lid type L :");
+            Serial.println(val);
+          #endif
+      }else if(s.indexOf("eye_lid_type_r:") > -1){
+          eye_R.setLidTypeValue(val);
+          #ifdef DEBUG
+            Serial.println("set value eye lid type R :");
+            Serial.println(val);
           #endif
       }else if(s.indexOf("eye_pupil_l:") > -1){
           eye_L.setPuilValue(val);
           #ifdef DEBUG
-            Serial.println("set value eye pupil L");
-            Serial.println(s.indexOf("eye_pupil_l:"));
+            Serial.println("set value eye pupil L :");
+            Serial.println(val);
           #endif
       }else if(s.indexOf("eye_pupil_r:") > -1){
           eye_R.setPuilValue(val);
           #ifdef DEBUG
-            Serial.println("set value eye pupil R");
-            Serial.println(s.indexOf("eye_pupil_r:"));
+            Serial.println("set value eye pupil R :");
+            Serial.println(val);
           #endif
       }else if(s.indexOf("eye_blink:") > -1){
           eye_L.setBlinkValue(val);
           eye_R.setBlinkValue(val);
           #ifdef DEBUG
-            Serial.println("set value blink");
-            Serial.println(s.indexOf("eye_blink:"));
+            Serial.println("set value blink :");
+            Serial.println(val);
           #endif
       }
       Serial.println(s);
@@ -170,10 +182,35 @@ void eyeEncodeImg(void){
   #ifdef DEBUG
     Serial.println("start encoding eye img");
   #endif
+  if(eye_L.differentLidType() == true || eye_R.differentLidType() == true){
+    do{
+        //Save original eyelid variables
+        int originLid_L = eye_L.getLidValue();
+        int originLid_R = eye_R.getLidValue();
+        //Open max eyes
+        eye_L.setLidValue(LIDS_MAX - 1);
+        eye_R.setLidValue(LIDS_MAX - 1);
+        //Create an image for each change other than the eyelid open
+        flug_L = eye_L.creatEyeImg(true, false, false, false);
+        flug_R = eye_R.creatEyeImg(true, false, false, true);
+        #ifdef DEBUG
+          Serial.println("created eye img");
+        #endif
+        //Show pupil image
+        #ifndef DEBUG_LCD
+          eye_L.dispEye();
+          eye_R.dispEye();
+          delay(transSpeed);
+        #endif
+        eye_L.setLidValue(originLid_L);
+        eye_R.setLidValue(originLid_R);
+        //Repeat until updated
+    }while(flug_L == false || flug_R == false);
+  }
   do{
-      //Create an image for each change other than the eyelid
-      flug_L = eye_L.creatEyeImg(false, true, false);
-      flug_R = eye_R.creatEyeImg(false, true, true);
+      //Create an image for each change other than the pupil
+      flug_L = eye_L.creatEyeImg(false, false, true, false);
+      flug_R = eye_R.creatEyeImg(false, false, true, true);
       #ifdef DEBUG
         Serial.println("created eye img");
       #endif
@@ -190,8 +227,8 @@ void eyeEncodeImg(void){
   #endif
   do{
       //Create an image for each change other than the eyelid
-      flug_L = eye_L.creatEyeImg(true, false, false);
-      flug_R = eye_R.creatEyeImg(true, false, true);
+      flug_L = eye_L.creatEyeImg(true, true, false, false);
+      flug_R = eye_R.creatEyeImg(true, true, false, true);
       #ifdef DEBUG
         Serial.println("created eye img");
       #endif
